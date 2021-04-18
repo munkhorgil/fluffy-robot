@@ -6,10 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "NODE_ENV=production node ./build",
-    "dev": "ts-node-dev --respawn --transpile-only ./src",
+    "dev": "ts-node-dev --no-notify src/index.ts",
     "tslint": "tslint --project tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
     "*.{ts,md}": [
@@ -22,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
