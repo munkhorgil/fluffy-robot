@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "NODE_ENV=production node ./build/indexjs",
+    "start": "NODE_ENV=production node ./build",
     "dev": "ts-node-dev --respawn --transpile-only ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
